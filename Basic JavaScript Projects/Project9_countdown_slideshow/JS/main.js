@@ -2,9 +2,12 @@ function countdown() {
     var seconds = document.getElementById("seconds").value;
 
     function tick() {
+        // reducing the seconds each tick
         seconds = seconds - 1;
+        // setting the timer to be how many seconds left
         timer.innerHTML = seconds;
-        var time= setTimeout(tick, 1000);
+        var time = setTimeout(tick, 1000);
+        // nested function for when the timer goes off
         if (seconds == -1) {
             alert("Time's up!");
             clearTimeout(time);
