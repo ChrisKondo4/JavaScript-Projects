@@ -1,3 +1,13 @@
+function counter() {
+    var Num = '';
+    var K = 10;
+    while (K != -1) {
+        Num += '<br>' + K;
+        K--;
+    }
+    document.getElementById('countDown').innerHTML = Num;
+}
+
 // Declaring Variables for the Party Member list
 var Party_Members = ["Tank", "Support", "Damage", "Controller"];
 var Stuff = "";
